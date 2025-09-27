@@ -12,6 +12,13 @@ npm install
 npm run dev
 ```
 
+You must fill out .env with the following environment variables.
+```
+DISCORD_BOT_TOKEN=your-bot-token
+DISCORD_CLIENT_ID=your-client-id
+# If using ollama
+OLLAMA_MODEL=ollama-model-name
+```
 ---
 
 This is intended to be used as a starting point and is not production code.
