@@ -20,7 +20,7 @@ async function getCtx(
     const msgs = await channel.messages.fetch({ limit: 5 });
     return msgs.reverse().map(m =>
         m.author.id === selfId
-            ? ({ role: "assistant", content: `"{m.content}` } as AssistantModelMessage)
+            ? ({ role: "assistant", content: `${m.content}` } as AssistantModelMessage)
             : ({ role: "user", content: `${m.author.username}: "${m.content}"` } as UserModelMessage)
     );
 };
