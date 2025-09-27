@@ -1,0 +1,25 @@
+{
+  "name": "ai-sdk-bot",
+  "version": "1.0.0",
+  "description": "simple discord.js bot template that uses ai sdk. ",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "watch": "tsc -w"
+  },
+  "author": "azxyc",
+  "license": "MIT",
+  "dependencies": {
+    "ai": "^5.0.56",
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "ollama-ai-provider-v2": "^1.3.1",
+    "tsc": "^2.0.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2",
+    "zod": "^4.1.11"
+  }
+}
